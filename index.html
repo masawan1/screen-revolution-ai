@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolusi Layar Lebar dan Layar Kaca: Dari Analog ke AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Definisi animasi fade-in (untuk elemen selain tombol) */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Definisi animasi pulse-fade (untuk tombol) */
+        @keyframes pulse-fade {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .animate-pulse-fade {
+            animation: pulse-fade 2s infinite;
+        }
+    </style>
+</head>
+<body class="antialiased bg-gradient-to-br from-blue-100 to-purple-100">
+    <!-- Header -->
+    <header class="bg-indigo-700 text-white p-6 md:p-8 rounded-b-3xl shadow-lg animate-fade-in">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Revolusi Layar Lebar dan Layar Kaca: Dari Analog ke AI</h1>
+            <p class="text-lg md:text-xl font-light">Sebuah perjalanan untuk memahami evolusi industri broadcasting dan perfilman.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Bagian 1: Evolusi Proses Produksi -->
+        <section class="bg-white p-6 md:p-10 rounded-3xl shadow-xl mb-8 animate-fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">1. Evolusi Proses Produksi: Dari Analog ke Digital</h2>
+            
+            <!-- Visualisasi Evolusi -->
+            <div class="flex flex-col items-center justify-center space-y-4 mb-8">
+                <!-- Analog -->
+                <div class="flex flex-col items-center">
+                    <span class="text-6xl mb-2">🎞️</span>
+                    <p class="font-semibold text-gray-700">Era Analog</p>
+                    <p class="text-sm text-gray-500">Film Seluloid & Videotape</p>
+                </div>
+                
+                <!-- Panah Transisi -->
+                <div class="text-4xl text-gray-500">⬇️</div>
+                
+                <!-- Digital -->
+                <div class="flex flex-col items-center">
+                    <span class="text-6xl mb-2">💻</span>
+                    <p class="font-semibold text-gray-700">Era Digital</p>
+                    <p class="text-sm text-gray-500">Kamera Digital & NLE</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Era Analog Card -->
+                <div class="bg-gray-100 p-6 rounded-2xl border-2 border-gray-200 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">🎞️</span>
+                        <h3 class="text-xl font-semibold text-gray-700">Era Analog</h3>
+                    </div>
+                    <div class="space-y-4 text-gray-600 text-justify">
+                        <p class="text-sm">Di era ini, produksi konten sangat mengandalkan media fisik. Prosesnya pun bersifat linear dan manual.</p>
+                        
+                        <p class="text-base font-semibold text-gray-700">Film Seluloid:</p>
+                        <p class="text-sm">Merupakan lembaran plastik fleksibel yang dilapisi emulsi kimia peka cahaya. Setiap gambar direkam secara individual pada setiap bingkai film. Pengeditan dilakukan dengan cara memotong film fisik dan menyambungnya kembali dengan perekat khusus. Proses ini sangat memakan waktu dan berisiko merusak salinan asli film.</p>
+
+                        <p class="text-base font-semibold text-gray-700">Kaset Videotape:</p>
+                        <p class="text-sm">Digunakan secara luas di industri broadcasting. Kaset ini menyimpan sinyal audio dan video pada pita magnetik. Meskipun lebih praktis dan dapat dihapus-isi ulang dibandingkan film, kualitasnya tidak setinggi film. Proses pengeditan juga masih linear, yang berarti untuk mengubah satu adegan, editor harus memutar ulang kaset dari awal. Ini membuat pekerjaan pasca-produksi menjadi kurang fleksibel.</p>
+                    </div>
+                </div>
+                
+                <!-- Era Digital Card (Updated) -->
+                <div class="bg-green-50 p-6 rounded-2xl border-2 border-green-200 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">💻</span>
+                        <h3 class="text-xl font-semibold text-gray-700">Era Digital</h3>
+                    </div>
+                    <div class="space-y-4 text-gray-600 text-justify">
+                        <p class="text-sm">Era digital adalah revolusi yang mengubah cara konten diproduksi, diedit, dan didistribusikan. Peralatan fisik digantikan oleh data digital, membuka peluang baru yang tak terbatas.</p>
+                        
+                        <p class="text-base font-semibold text-gray-700">Teknologi Utama:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-2 text-sm">
+                            <li>**Kamera Digital:** Kamera modern merekam gambar dengan sensor digital (seperti CMOS) dan menyimpannya sebagai file data, bukan pada media fisik. Hal ini memungkinkan resolusi yang jauh lebih tinggi (4K, 8K) dan fleksibilitas dalam _workflow_.</li>
+                            <li>**_Non-Linear Editing_ (NLE):** Pengeditan kini dilakukan di komputer menggunakan perangkat lunak seperti Adobe Premiere Pro atau DaVinci Resolve. Konsep "non-linear" berarti editor dapat mengakses dan memanipulasi _frame_ atau adegan apa pun secara instan, tanpa harus memutar ulang urutan dari awal.</li>
+                        </ul>
+
+                        <p class="text-base font-semibold text-gray-700">Dampak Signifikan:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-2 text-sm">
+                            <li>**Efisiensi dan Fleksibilitas:** Proses produksi menjadi jauh lebih cepat. Pengeditan, revisi, dan distribusi dapat dilakukan dari mana saja, memangkas waktu dan biaya secara drastis.</li>
+                            <li>**Kualitas dan Durabilitas:** Konten digital tidak mengalami degradasi seiring waktu. Kualitas gambar dan suara tetap tajam, dan file dapat dicadangkan serta diarsipkan dengan mudah.</li>
+                            <li>**Aksesibilitas Biaya:** Peralatan produksi digital (kamera, perangkat lunak editing) menjadi semakin terjangkau, memungkinkan para kreator independen, Youtuber, dan _filmmaker_ pemula untuk bersaing di industri ini.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 2: Jenis-Jenis Media Digital -->
+        <section class="bg-white p-6 md:p-10 rounded-3xl shadow-xl mb-8 animate-fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">2. Jenis-Jenis Media Digital</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- FTA Card -->
+                <div class="bg-blue-50 p-5 rounded-2xl border-2 border-blue-200 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <span class="text-4xl block mb-2">📺</span>
+                    <h4 class="text-lg font-bold text-gray-800">FTA (Free-to-Air)</h4>
+                    <p class="text-gray-600 mt-1">Siaran televisi tradisional yang gratis diakses melalui antena. Contoh: TVRI, SCTV.</p>
+                </div>
+                
+                <!-- OTT Card -->
+                <div class="bg-indigo-50 p-5 rounded-2xl border-2 border-indigo-200 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <span class="text-4xl block mb-2">📱</span>
+                    <h4 class="text-lg font-bold text-gray-800">OTT (Over-the-Top)</h4>
+                    <p class="text-gray-600 mt-1">Layanan video melalui internet dengan biaya langganan bulanan. Contoh: Netflix, Disney+.</p>
+                </div>
+                
+                <!-- Podcast Card -->
+                <div class="bg-purple-50 p-5 rounded-2xl border-2 border-purple-200 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <span class="text-4xl block mb-2">🎙️</span>
+                    <h4 class="text-lg font-bold text-gray-800">Podcast</h4>
+                    <p class="text-gray-600 mt-1">Konten audio episodik yang tersedia secara daring dan on-demand.</p>
+                </div>
+                
+                <!-- Live Streaming Card -->
+                <div class="bg-pink-50 p-5 rounded-2xl border-2 border-pink-200 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <span class="text-4xl block mb-2">🎥</span>
+                    <h4 class="text-lg font-bold text-gray-800">Live Streaming</h4>
+                    <p class="text-gray-600 mt-1">Penyiaran langsung real-time melalui internet. Contoh: YouTube Live, Twitch.</p>
+                </div>
+                
+                <!-- Streaming TV Card -->
+                <div class="bg-teal-50 p-5 rounded-2xl border-2 border-teal-200 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <span class="text-4xl block mb-2">📡</span>
+                    <h4 class="text-lg font-bold text-gray-800">Streaming TV</h4>
+                    <p class="text-gray-600 mt-1">Menonton siaran televisi konvensional secara langsung melalui internet.</p>
+                </div>
+                
+                <!-- Web Series Card -->
+                <div class="bg-yellow-50 p-5 rounded-2xl border-2 border-yellow-200 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <span class="text-4xl block mb-2">🎬</span>
+                    <h4 class="text-lg font-bold text-gray-800">Web Series</h4>
+                    <p class="text-gray-600 mt-1">Serial drama atau komedi yang diproduksi khusus untuk internet, biasanya dengan durasi lebih pendek.</p>
+                </div>
+
+                <!-- VoD Card -->
+                <div class="bg-red-50 p-5 rounded-2xl border-2 border-red-200 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <span class="text-4xl block mb-2">▶️</span>
+                    <h4 class="text-lg font-bold text-gray-800">Video on Demand (VoD)</h4>
+                    <p class="text-gray-600 mt-1">Sistem menonton video kapan saja, baik melalui langganan atau pembayaran per tontonan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 3: Aspek Regulasi dan Teknologi -->
+        <section class="bg-white p-6 md:p-10 rounded-3xl shadow-xl mb-8 animate-fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">3. Aspek Regulasi dan Teknologi</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Dampak UU ITE Card -->
+                <div class="bg-sky-50 p-6 rounded-2xl border-2 border-sky-200 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">⚖️</span>
+                        <h3 class="text-xl font-semibold text-gray-700">Dampak Undang-Undang ITE</h3>
+                    </div>
+                    <div class="space-y-4 text-gray-600 text-justify">
+                        <!-- Hak Cipta -->
+                        <p class="text-base font-semibold text-gray-700">Melindungi Hak Cipta:</p>
+                        <p class="text-sm">UU ITE memberikan kerangka hukum yang kuat untuk melindungi konten digital dari pelanggaran hak cipta. Hal ini sangat penting di era _streaming_ dan distribusi daring, di mana konten mudah disalin dan disebarkan tanpa izin. UU ini menjamin bahwa kreator memiliki hak eksklusif atas karya mereka, dan tindakan pembajakan (seperti menyebarkan film bajakan di media sosial) dapat dikenai sanksi hukum.</p>
+
+                        <!-- Konten Digital -->
+                        <p class="text-base font-semibold text-gray-700">Mengatur Batasan Konten Digital:</p>
+                        <p class="text-sm">Undang-undang ini juga mengatur jenis konten yang boleh atau tidak boleh disebarkan di platform digital. UU ITE secara spesifik melarang penyebaran informasi yang mengandung unsur pencemaran nama baik, berita bohong (hoaks), konten yang melanggar kesusilaan, atau ujaran kebencian. Aturan ini mendorong kreator konten untuk lebih bertanggung jawab dan memastikan bahwa platform digital tidak menjadi sarana penyebaran konten ilegal.</p>
+                        
+                        <!-- Transaksi Elektronik -->
+                        <p class="text-base font-semibold text-gray-700">Memberikan Landasan Hukum untuk Transaksi:</p>
+                        <p class="text-sm">Di industri media, banyak layanan yang berbasis langganan atau pembayaran per tontonan (misalnya, OTT dan VoD). UU ITE memberikan legitimasi hukum untuk transaksi-transaksi digital ini. Hal ini menciptakan kepercayaan bagi konsumen untuk melakukan pembayaran secara online dan bagi perusahaan media untuk menjalankan model bisnis digital mereka dengan aman, karena adanya perlindungan hukum terhadap hak dan kewajiban kedua belah pihak.</p>
+                    </div>
+                </div>
+
+                <!-- Peran AI Card (Updated) -->
+                <div class="bg-indigo-50 p-6 rounded-2xl border-2 border-indigo-200 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4">🤖</span>
+                        <h3 class="text-xl font-semibold text-gray-700">Peran Kecerdasan Buatan (AI)</h3>
+                    </div>
+                    <div class="space-y-4 text-gray-600 text-justify">
+                        <!-- Produksi -->
+                        <p class="text-base font-semibold text-gray-700">Produksi & Pasca-Produksi:</p>
+                        <p class="text-sm">AI digunakan untuk mengotomatisasi pekerjaan yang memakan waktu, seperti melakukan **_color grading_** untuk memastikan konsistensi visual di seluruh film atau menghasilkan **_special effects_** yang kompleks dengan lebih cepat. AI juga dapat menganalisis naskah untuk memprediksi _rating_ atau daya tarik plot, dan membantu dalam proses pra-produksi seperti membuat _storyboard_ atau model 3D.</p>
+
+                        <!-- Distribusi -->
+                        <p class="text-base font-semibold text-gray-700">Distribusi & Personalisasi:</p>
+                        <p class="text-sm">Algoritma AI adalah jantung dari platform _streaming_ modern. Mereka menganalisis data tontonan, riwayat pencarian, dan interaksi pengguna untuk memberikan **rekomendasi konten yang sangat personal** (_personalized recommendations_). AI juga mengoptimalkan tata letak (_layout_) dan _thumbnail_ untuk meningkatkan klik, serta menargetkan iklan kepada audiens yang paling relevan.</p>
+
+                        <!-- Konsumsi -->
+                        <p class="text-base font-semibold text-gray-700">Konsumsi & Pengalaman Pengguna:</p>
+                        <p class="text-sm">AI meningkatkan pengalaman menonton secara keseluruhan. AI dapat menyesuaikan **kualitas _streaming_** video secara _real-time_ berdasarkan kecepatan internet pengguna. Dalam platform _live streaming_, AI membantu dalam moderasi komentar, dan bahkan memungkinkan fitur seperti _closed captioning_ atau terjemahan otomatis. AI juga dapat membantu dalam fitur-fitur aksesibilitas, seperti deskripsi audio untuk tunanetra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tombol Link Dashboard (animasi pulse-fade) -->
+        <div class="flex justify-center my-8 animate-pulse-fade">
+            <a href="https://masawan1.github.io/dashboard_D2PK/" target="_blank" class="block w-fit bg-indigo-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">
+                Lihat Dashboard D2PK
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 md:p-6 text-center mt-8">
+        <p class="text-sm font-light">&copy; 2025 Materi Ajar Digital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
